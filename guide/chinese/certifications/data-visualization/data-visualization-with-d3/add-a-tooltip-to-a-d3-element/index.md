@@ -4,6 +4,27 @@ localeTitle: 将工具提示添加到D3元素
 ---
 ## 将工具提示添加到D3元素
 
-这是一个存根。 [帮助我们的社区扩展它](https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/data-visualization/data-visualization-with-d3/add-a-tooltip-to-a-d3-element/index.md) 。
+### 提示 1
 
-[这种快速风格指南有助于确保您的拉取请求被接受](https://github.com/freecodecamp/guides/blob/master/README.md) 。
+使用`.append()`方法。
+
+### 提示 2
+
+使用`.text()`方法。
+
+### 提示 3
+
+链接`.append()`和`.text()`方法。
+
+### 提示 4
+
+在` .text() `方法中使用回调函数。
+
+### 答案
+
+使用`svg.selectAll("rect")`方法链接以下代码行。
+
+```javascript
+  .append("title")
+  .text(d=>d);
+```
