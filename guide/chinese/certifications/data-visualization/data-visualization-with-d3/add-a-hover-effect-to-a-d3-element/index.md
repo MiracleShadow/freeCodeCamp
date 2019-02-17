@@ -4,6 +4,18 @@ localeTitle: 将悬停效果添加到D3元素
 ---
 ## 将悬停效果添加到D3元素
 
-这是一个存根。 [帮助我们的社区扩展它](https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/data-visualization/data-visualization-with-d3/add-a-hover-effect-to-a-d3-element/index.md) 。
+### 提示 1
 
-[这种快速风格指南有助于确保您的拉取请求被接受](https://github.com/freecodecamp/guides/blob/master/README.md) 。
+将`bar`类添加到所有`rect`元素。
+
+### 提示 2
+
+使用`attr()`方法添加属性。
+
+### 答案
+
+将以下代码行添加到`rect`方法链的末尾：
+
+```javascript
+.attr("class","bar");
+```
