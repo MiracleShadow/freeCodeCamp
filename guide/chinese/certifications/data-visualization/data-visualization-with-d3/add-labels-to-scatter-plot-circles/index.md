@@ -4,6 +4,30 @@ localeTitle: 添加标签以分散绘图圆圈
 ---
 ## 添加标签以分散绘图圆圈
 
-这是一个存根。 [帮助我们的社区扩展它](https://github.com/freecodecamp/guides/tree/master/src/pages/certifications/data-visualization/data-visualization-with-d3/add-labels-to-scatter-plot-circles/index.md) 。
+添加标签以分散绘图圆圈
+在此挑战中，您需要设置x属性，使其比您在圆上使用cx属性的值多5个单位。 对于文本元素，设置y属性的方式与圆圈上的cy值相同。
 
-[这种快速风格指南有助于确保您的拉取请求被接受](https://github.com/freecodecamp/guides/blob/master/README.md) 。
+### 提示1
+
+定位`svg.selectAll("text")`代码块。
+
+### 提示2
+
+使用`d [0]`和`d [1]`显示数据。
+
+### 提示3
+
+显示格式必须是`x`，`y`。
+
+### 注意
+
+逗号和`y`属性之间有一个空格。
+
+### 答案
+
+因为，您需要添加`x`任何`y`属性，类似于为圆圈设置的属性，将其添加到`svg.selectAll("text")`代码块：
+
+```javascript
+.text((d) => (d[0] + ", " + d[1]))
+```
+
